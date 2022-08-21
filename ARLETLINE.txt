@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="PROGRAM1.JS"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROGRAM FOR COMMUNICATION WITH STUDENTS</title>
+    <script type="text/javascript">
+        function alertIN(){
+            alert("ARE YOU VACINATED!");
+        }
+        function confirmIN(){
+            {
+				if(confirm("ARE YOU FINE SO, PLEASE PREES OK")){
+					alert("YES");
+				}
+				else{
+					alert("NO");
+				}
+			}
+        }
+        function COMPLETE(){
+            {
+				if(confirm("ARE YOU COMPLETE THIS PROCESS")){
+					alert("YES");
+				}
+				else{
+					alert("NO");
+                    alert('PLEASE COMPLETE THIS PROCESS..')
+				}
+			}
+            
+        }
+        function PromptIN(){
+				var fName=prompt("ENTER YOUR NAME");
+				var SName=prompt("ENTER YOUR SURNAME");
+                var ST=prompt("ENTER YOUR STANDARD");
+				alert(fName+" "+SName+" "+"YOU ARE STUDY IN"+" "+ST);
+        }
+        function bodyBG(){
+				document.body.style.backgroundImage="none";
+				document.body.style.backgroundColor="gray";
+                document.body.style.color="white";
+			}
+        function divBG(){
+		        document.getElementById("BOX").style.backgroundColor="BLUE";
+			}
+        function BODYBGNAME(){
+                document.body.style.backgroundColor=prompt("ENTER BODY COLOR NAME OR CODE HERE");
+                document.bodpy.style.color=prompt("ENTER TEXT COLOR NAME OR CODE HERE");
+        }
+        function divbgname(){
+                document.getElementById("BOX").style.backgroundColor=prompt("ENTER COLOR NAME");
+        }
+        function COLORBG(){
+				document.body.style.backgroundColor=document.getElementById("COLOR1").value;
+		}
+        function BOXCOLOR(){
+ 			    document.getElementById("BOX").style.backgroundColor=document.getElementById("COLOR2").value;
+		}
+        function bodyimage(){
+				document.body.style.backgroundImage="url('bgimage.png')";
+                document.body.style.backgroundImage="possiontion"
+		}
+        function BODYMODE(){
+                document.body.style.backgroundColor="white";
+                document.body.style.color="black";
+        }
+    </script>
+    <STyle>
+        body{
+            text-align: center;
+            font-size: 2.5vh;
+            background-color: lightblue;
+            color: black;
+            
+        }
+        #DIV1{
+            border: 5px solid rgb(6, 0, 0);
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+        #DIV2{
+            border: 5px solid rgb(6, 0, 0);
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+        #DIV3{
+            border: 5px solid rgb(6, 0, 0);
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+        #DIV4{
+            border: 5px solid rgb(6, 0, 0);
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+        #BOX{
+            height: 250px;
+            width: 250px;
+            background-color: cadetblue;
+        }
+        input{
+            margin-bottom: 10px;
+            background-color: lightgray;
+            width: 100px;
+            border-radius: 15px;
+            height: 32px;
+        }
+
+    </STyle>
+</head>
+<body>
+    <center>
+    <div id="BOX">
+        <h1>
+        JAVA SCRIPT
+        </h1>
+    </div>
+    </center>
+    <div id="DIV1">
+        <span>ALERT INLINE</span><br><br>
+        <br>
+        <input type="button" value="CLICK" onclick="alert('HELLO HOW ARE YOU..')"/>
+    </div>
+    <div id="DIV1">
+        <span>ALERT INTERNAL</span><br><br>
+        <br>
+        <input type="button" value="CLICK" onclick="alertIN()"/>
+    </div>
+    <div id="DIV1">
+        <span>ALERT EXTERNAL</span><br><br>
+        <br>
+        <input type="button" value="CLICK" onclick="alertEX()"/>
+    </div>
+    <div id="DIV2">
+        <span>CONFIRM INLINE</span><br><br>
+        <br>
+        <input type="button" value="CLICK" onclick="confirm('PLEASE GIVES DETAIL OF YOU ONE BY ONE')"/>
+    </div>
+    <div id="DIV2">
+        <span>CONFIRM INTERNAL</span><br><br>
+        <br>
+        <input type="button" value="CLICK" onclick="confirmIN()"/>
+    </div>
+    <div id="DIV2">
+        <span>CONFIRM EXTERNAL</span><br><br>
+        <br>
+        <input type="button" value="CLICK" onclick="confirmEX()"/>
+    </div>
+    <div id="DIV3">
+        <span>PROMPT INLINE</span><br><br>
+        <br>
+        <input type="button" value="CLICK" onclick="prompt('ENTER YOUR NAME')"/>
+    </div>
+    <div id="DIV3">
+        <span>PROMPT INTERNAL</span><br><br>
+        <br>
+        <input type="button" value="CLICK" onclick="PromptIN()"/>
+    </div>
+    <div id="DIV3">
+        <span>PROMPT EXTERNNAL</span><br><br>
+        <br>
+        <input type="button" value="CLICK" onclick="PromptEX()"/>
+    </div>
+    <b>
+    <h3>CAN YOU TEST THIS ARE..</h3>
+    <h4>FOR VERIFY THIS PROCESS</h4>
+    </b>
+    <div id="DIV4">
+        <span>BODY COLOR BLACK</span><br><br>
+        <br>
+		<input type="button" value="CLICK" onclick="bodyBG()"/>
+    </div>
+    <div id="DIV4">
+        <span>GIVE COLOR ON BOX</span><br><br>
+        <br>
+		<input type="button" value="CLICK" onclick="divBG()"/>
+    </div>
+    <div id="DIV4">
+        <span>GIVE COLOR ON BODY BY NAME</span><br><br>
+        <br>
+        <input type="button" value="CLICK" onclick="BODYBGNAME()"/>
+    </div>
+    <div id="DIV4">
+        <span>GIVE COLOR ON BOX NAME</span><br><br>
+        <br>
+        <input type="button" value="CLICK" onclick="divbgname()"/>
+    </div>
+    <div id="DIV4">
+    <span>BACKGROUND COLOR CHOSE</span><br><br>
+    <BR>
+	<input type="color" id="COLOR1" onchange="COLORBG()"/>
+    </div>
+    <div id="DIV4">
+        <span> BOX COLOR CHOSE</span><br><br>
+        <BR>
+        <input type="color" id="COLOR2" onchange="BOXCOLOR()"/>
+    </div>
+    <div id="DIV4">
+        <span>SET IMAGE ON BODY</span><br><br>
+        <br>
+        <input type="button" value="CLICK" onclick="bodyimage()"/>
+    </div>
+    <div id="DIV3">
+        <span>ARE YOU COMPLETE THIS PROCES PRESS THIS BUTTON</span><br><br>
+        <br>
+        <input type="button" value="COMPLETE" onclick="COMPLETE()">
+    </div>
+</body>
+</html>
