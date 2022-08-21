@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>HTML Forms</h2> 
+<style>
+    p.dotted {border-style: dotted;}
+</style> 
+<body>
+    <p class="dotted">MY FORM.</p>
+</body>
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value=""><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value=""><br><br>
+  <input type="submit" value="Submit"> 
+  <label for="cars">Choose your field:</label>
+
+<select id="field">
+  <option value="BCA">BCA</option>
+  <option value="BBA">BBA</option>
+  <option value="BA">BA</option>
+  <option value="ARTS">ARTS</option>
+</select>
+</form> 
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
+</body>
+</html>
